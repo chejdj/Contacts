@@ -92,6 +92,7 @@
     NSLog(@"添加用户取消！");
     [self.navigationController popViewControllerAnimated:true];
 }
+//coredata竟然不支持主键设置。。。
 -(void)save:(UIButton *)btn{
     NSLog(@"添加用户");
     NSString * name = username_in.text;

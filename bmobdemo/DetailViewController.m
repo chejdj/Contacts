@@ -20,10 +20,11 @@
     float width = self.view.bounds.size.width;
     [self.view setBackgroundColor:[UIColor whiteColor]];
     
-    back=[[UIButton alloc]initWithFrame:CGRectMake(15, 35, 40, 60)];
-    [back setTitle:@"<" forState:UIControlStateNormal];
-    back.font=[UIFont boldSystemFontOfSize:20.0f];
+    back=[[UIButton alloc]initWithFrame:CGRectMake(25, 35, width-50, 60)];
+    [back setTitle:@"< 通讯录" forState:UIControlStateNormal];
+    back.font=[UIFont boldSystemFontOfSize:18.0f];
     [back addTarget:self action:@selector(back_ground:) forControlEvents:UIControlEventTouchUpInside];
+ back.contentHorizontalAlignment=UIControlContentHorizontalAlignmentLeft;
     [back setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [self.view addSubview:back];
     
